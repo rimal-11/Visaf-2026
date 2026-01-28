@@ -118,7 +118,7 @@ body {
     color: black;
 }
 
-.malayalam-text p {
+.malayalam-text ul li {
     margin-bottom: 18px;
 }
 
@@ -227,8 +227,34 @@ footer {
     }
 }
 
+div img.desktop{
 
+
+    position: relative;
+    width:100%;
+    height: auto;
+    display: block;
+}
+
+div img.mobile{
+    display: none;
+}
+
+@media (max-width: 768px){
+    div img.mobile{
+        margin-top: 60px;
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    div img.desktop{
+        display: none;
+    }
+
+}
 .top-image {
+    
     position: relative;
     width: 100%;
 }
@@ -238,6 +264,9 @@ footer {
     height: auto;
     display: block;
 }
+
+
+
 
 .image-btn {
     position: absolute;
